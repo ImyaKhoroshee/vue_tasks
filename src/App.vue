@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <Authentication :isAuth="isAuthenticated" />
+  <UserList />
+  <MortgageCalculator /> -->
+  <Productdetails />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import Authentication from "./components/Authentication.vue";
+// import MortgageCalculator from "./components/MortgageCalculator.vue";
+// import UserList from "./components/UserList.vue";
+import Productdetails from "./components/Productdetails.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    // Authentication,
+    // UserList,
+    // MortgageCalculator,
+    Productdetails,
+  },
+  data() {
+    return {
+      // isAuthenticated: false,
+    };
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss"></style>
